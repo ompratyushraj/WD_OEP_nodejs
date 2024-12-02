@@ -1,0 +1,31 @@
+<h3><a class="btn btn-info" href="/admin"><i class="fa fa-plus"></i> Create New</a> Student List</h3>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.password}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>
+                <a href="/admin/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"
+                        style="color: rgb(17, 231, 17);"></i></a>
+                <a href="/admin/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"
+                    style="color: red;"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

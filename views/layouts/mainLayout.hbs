@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Sora", sans-serif;
+            line-height: 1.5;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+        /*Nav Bar*/
+
+        nav {
+            height: 2.8rem;
+            background: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+
+        }
+
+        .nav-center {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div.nav-center>h4 {
+            flex-grow: 9;
+            padding: 4px;
+            font-size: 1.7rem;
+            color: white;
+            margin-top: 2.5px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        div.nav-center>ul {
+            flex-grow: 1;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+        }
+
+        .anchor-links {
+            padding: 6px;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+
+
+        }
+
+        /*End of Nav Bar*/
+
+        .footer {
+            height: 4vh;
+            width: 102%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin-top: auto;
+
+        }
+    </style>
+
+    <title>Authentication</title>
+</head>
+
+<body class="bg-secondary">
+
+    <!--Nav Bar-->
+    <nav>
+        <div class="nav-center">
+
+            <h4 class="logo"><a href="/">OEP</a></h4>
+
+            <ul class="links">
+                <li>
+                    <a href="/" class="anchor-links">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="anchor-links">About</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="anchor-links">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End of Nav Bar-->
+    <div class="row">
+        <div class="col-md-10 offset-md-3" style="background-color: #fff;margin:4rem 10rem 2rem 7rem;padding:3.5rem;">
+            {{{body}}}
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Made with <span style="color:tomato">❤</span> by Pratyush Raj Srivastava &copy; 2022</p>
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
